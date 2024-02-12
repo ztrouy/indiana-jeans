@@ -5,7 +5,7 @@ import { locationTypeChoices } from "./userLocation.js"
 
 const container = document.querySelector("#container")
 
-export const render = async () => {
+const render = async () => {
     const jeanOwnershipHTML = await ownJeansChoices()
     const locationsHTML = await locationTypeChoices()
     const buttonHTML = await saveSubmission()
