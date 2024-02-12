@@ -3,7 +3,7 @@ import { saveSurveySubmission } from "./transientState.js"
 export const saveSubmission = () => {
     document.addEventListener("click", handleSurveySubmissionClick)
 
-    return `<button id="saveSubmission">Save Submission</button>`
+    return `<section><button id="saveSubmission">Save Submission</button></section>`
 }
 
 const handleSurveySubmissionClick = (clickEvent) => {
