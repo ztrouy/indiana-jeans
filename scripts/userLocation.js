@@ -16,7 +16,7 @@ export const locationTypeChoices = async () => {
 
 const handleLocationChange = (changeEvent) => {
     if (changeEvent.target.name === "location") {
-        const convertedToInteger = JSON.parseInt(changeEvent.target.value)
+        const convertedToInteger = JSON.parse(changeEvent.target.value)
         setSocioLocationId(convertedToInteger)
     }
 }

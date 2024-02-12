@@ -18,7 +18,7 @@ export const setSocioLocationId = (chosenLocation) => {
 
 
 // Function to convert transient state to permanent state
-export const saveSurverySubmission = async () => {
+export const saveSurveySubmission = async () => {
     const postOptions = {
         method: "POST",
         headers: {
