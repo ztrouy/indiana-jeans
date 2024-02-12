@@ -8,10 +8,12 @@ const transientState = {
 // Functions to modify each property of transient state
 export const setOwnsBlueJeans = (chosenOwnership) => {
     transientState.ownsBlueJeans = chosenOwnership
+    console.log(transientState)
 }
 
 export const setSocioLocationId = (chosenLocation) => {
     transientState.socioLocationId = chosenLocation
+    console.log(transientState)
 }
 
 
