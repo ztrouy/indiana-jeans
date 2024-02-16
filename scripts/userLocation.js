@@ -7,11 +7,10 @@ export const locationTypeChoices = async () => {
     const locations = await response.json()
 
     let choicesHTML = "<section><h2>Which type of area do you live in?</h2>"
-    for (const location of locations) {
-        choicesHTML += `<input type="radio" name="location" value="${location.id}" /> ${location.label}`
-    }
+    
+    const inputStringArray = locations.map(location => {return `<input type="radio" name="location" value="${location.id}" /> ${location.label}`})
 
-    choicesHTML += "</section>"
+    choicesHTML += `${inputStringArray.join("")}</section>`
 
     return choicesHTML
 }
